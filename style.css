@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'NanumGothic';
-  src: url(/fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
-       url(/fonts/NanumGothic.woff) format('woff')
+  src: url(./fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
+       url(./fonts/NanumGothic.woff) format('woff')
 }
 
 body, button {
