@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(/fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
+       url(/fonts/NanumGothic.woff) format('woff')
+}
+
+body, button {
+  font-family: 'NanumGothic';
+  margin: 0;
+}
+
+.content a:link, .content a:visited {
+  color: ForestGreen;
+  text-decoration: none;
+}
+
+.content a:hover, .content a:visited:hover {
+  color: LimeGreen;
+  text-decoration: none;
+}
+
+.content {
+  padding: 50px;
+  padding-top: 0;
+}
+
+.notice {
+  text-align: center;
+  background: #EE143C;
+  font-size: larger;
+  padding: 5px;
+  color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.notice p {
+  padding: 0;
+  margin: 0;
+}
+
+.notice a {
+  color: ForestGreen;
+  cursor: pointer;
+}
+
+.header {
+  background-color: dimgray;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
+  width: 100%;
+  height: 40px;
+  text-shadow: 2px 2px 8px black;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: 100px;
+}
+
+.header h1 {
+  cursor: pointer;
+  margin: 0;
+  display: inline;
+}
+
+.header h5 {
+  cursor: pointer;
+  margin: 0;
+  display: inline;
+  margin-left: 350px
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 8px;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5DBF60;
+}
+
+.extraInfos {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.infoList {
+  padding: 0;
+}
+
+.infoList li {
+  display: inline;
+  margin: 50px;
+}
+
+.versions {
+  list-style-type: none;
+}
+
+.versions .ver {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.versions .ver span {
+  margin-left: 5px;
+  font-weight: initial;
+  font-size: small;
+  color: gray;
+}
+
+.versions .features {
+  padding-left: 30px;
+}
+
+.versions .features li{
+  list-style-type: square;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.versions .prev_download_link {
+  padding-left: 30px;
+}
+
+.versions .prev_download_link li{
+  list-style-type: square;
+  text-decoration: none;
+  margin-bottom: 3px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>자바스크립트에서 ==와 ===의 차이</title>
+</head>
+<body>
+  <span>1 == "1"의 결과:</span>
+  <script>document.write(1 == "1");</script>
+  <br>
+  <span>1 === "1"의 결과:</span>
+  <script>document.write(1 === "1");</script>
+  <p>
+    결론: ===은 데이터 타입까지 완전히 같다는 의미이다. ==보다는 ===를 쓰자.
+  </p>
+  <br>
+  <br>
+  <p>
+    버튼에서 버튼아이디.innerText하면 비교 가능한데 버튼아이디.textContent하면 비교가 안 되네.. 왜 이럴까?
+  </p>
+  <button id="btn">
+    hi
+  </button>
+  <br>
+  <span>document.getElementById('btn').innerText == "hi"의 결과: </span>
+  <script>document.write(document.getElementById('btn').innerText == "hi");</script>
+  <br>
+  <span>document.getElementById('btn').textContent == "hi"의 결과: </span>
+  <script>document.write(document.getElementById('btn').textContent == "hi");</script>
+  <p>
+    참고로 둘 다 출력하면 hi라고 정상적으로 나오며 ==건 ===건 관계없이 결과가 같다.
+  </p>
+</body>
+</html>

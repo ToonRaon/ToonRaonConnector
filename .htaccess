@@ -1,0 +1,7 @@
+<IfModule mod_url.c>
+    checkURL On
+    ServerEncoding EUC-KR
+    ClientEncoding UTF-8
+</IfModule>
+php_flag register_globals on
+php_flag register_long_arrays on

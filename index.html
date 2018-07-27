@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToonRaon 싸지방 접속기</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122314368-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122314368-1');
+    </script>
+  </head>
+  <body>
+    <div class="header" id="myHeader">
+      <h1><a href="http://toonraon.dothome.co.kr">ToonRaon 싸지방 구글, 유튜브 접속기</a></h1>
+<!--       <p style="margin-top: 0;">http://toonroan.cf/</p> -->
+    </div>
+    <div class="content">
+      <div class="notice">
+        <p>
+          <strong>공지!</strong> 2018.07.18 싸지방에서 '네이버 웨일' 다운로드 사이트가 <strong>유해 사이트</strong>로 지정되어 웨일 다운로드가 불가능합니다.
+        </p>
+        <p>
+          네이버 웨일을 사용하고 싶은 분들은 <strong><a href="https://drive.google.com/uc?export=download&confirm=YLdv&id=1QXm_GH11R33Tgz-K3lWt8Mvwxxss1fc7" target="_blank">여기</a></strong>(혹은 <strong><a href="https://download1023.mediafire.com/3hm204ut8zmg/b7ee8d39wgegr11/Whale.zip">여기</a></strong>)에서 다운로드 받은 후 압축을 풀고 사용하세요.
+        </p>
+        <p style="margin-top: 10px;">
+          ※ 구버전 브라우저에서 다운로드가 안 뜨던 현상을 수정하였습니다.
+        </p>
+      </div>
+      <p style="margin: 50px auto 0 auto; text-align: center; font-size: xx-large;"><strong>싸지방</strong>에서까지 <strong>스트레스</strong> 받을 필요는 없잖아?</p>
+      <p style="margin: 0 auto 50px auto; text-align: center; color:#555555">접속기를 사용하여 구글, 유튜브에 마음껏 접속하세요!</p>
+      
+      <script>
+        // ie에서 다운로드를 시도할 경우 return false
+        function downloadOnIE(msg) {
+          // ie
+          if(navigator.appVersion.indexOf("MSIE")!=-1 || (!!window.MSInputMethodContext && !!document.documentMode)) {
+            if(msg) alert("인터넷 익스플로러에서는 그냥 다운로드가 되지 않습니다.\n\n우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장해주세요.\n\n(그냥 저장하면 파일 확장자가 .man이라는 이상한 확장자로 저장되어 실행되지 않습니다.)");
+
+            return false; // 다운로드 비허용
+          } else { // ie가 아닐 때
+            return true; // 다운로드 허용
+          }
+        }
+        
+        function connectorDownload() {
+          if(downloadOnIE(false)) { //ie가 아닐 때
+            return window.location.href='/prev-versions/ROKA_Google_Youtube_v2.7.bat'; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
+          } else { // ie 일 때
+            alert("인터넷 익스플로러는 직접 다운로드가 불가능합니다.");
+            
+            var btn = document.getElementById("downloadButton");
+            btn.style.display = "none"; // 버튼 사라짐
+            
+            var hiddenText = document.getElementById("hiddenText");
+            hiddenText.style.display = "block";
+          }
+        }
+      </script>
+
+      <button class="button" id="downloadButton" style="margin: auto; display: block;" onclick="connectorDownload();">접속기 <strong>다운로드</strong></button>
+      <a onclick="return false;" href="/prev-versions/ROKA_Google_Youtube_v2.7.bat" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장하세요.</a>
+      
+      <img src="/main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
+      
+      <!-- 아래쪽 기타 링크들 -->
+      <div class="extraInfos">
+        <ul class="infoList" padding="0px">
+          <li><a href="/prev-versions/" target="_self">다른버전</a></li>
+          <li><a href="/release-notes/" target="_self">패치내역</a></li>
+          <li><a href="https://github.com/ToonRaon/ROKA_Google_Youtube" target="_blank">Github</a></li>
+        </ul>
+      </div>
+      
+      
+
+      <p>
+        <!-- 덧글 기능 -->
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://toonraon.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </p>
+    </div>
+
+    
+    <!-- 스티키 헤더 -->
+    <script>
+      // When the user scrolls the page, execute myFunction 
+      window.onscroll = function() {myFunction()};
+
+      // Get the header
+      var header = document.getElementById("myHeader");
+
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>

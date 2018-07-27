@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic');
+
+:root {
+  --bg-color: #F0F3BD;
+}
+
+body, button, input, span, p, div {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.minimize {
+  display: none;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  float: right;
+  background: none;
+  color: white;
+  border: none;
+  height: 0;
+  font-size: 25px;
+  text-shadow: 3px 3px 5px black;
+}
+
+.header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 0;
+  background: var(--bg-color);
+  padding: 10px;
+  z-index: 1;
+}
+
+.header_title {
+  color: white;
+  text-align: center;
+  display: block;
+  font: x-large bold;
+  padding: 0;
+  margin: 0 7px 7px 7px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.grid_class {
+  display: grid;
+  width: 100%;
+  border-radius: 20px;
+  grid-template-columns: auto auto auto auto auto auto;
+  box-shadow: 10px 10px 49px -13px rgba(0,0,0,0.75);
+}
+
+
+
+.cell_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cell_child {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hidden_header {
+  background: #028090;
+  border-radius: 20px;
+  height: 40px;
+  display: none;
+}
+
+
+
+.horizontal_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#web_horizontal_grid {
+  grid-template-columns: 1fr 0;
+  grid-gap: 0;
+}
+
+#white_cell {
+  background: #028090;
+  border-radius: 20px 0 0 20px;
+}
+
+#white_cell #white_cell_content {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+}
+
+#black_cell_content {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+}
+
+#command_cell {
+  background: #05668D;
+}
+
+#command_cell #command_cell_content {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+#command_cell #command_cell_content #command_cell_div1 {
+  display: grid;
+  grid-template-columns: repeat(2, 36px);
+}
+
+#command_cell #command_cell_content #command_cell_div2 {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+}
+
+#misc_cell {
+  background: #028090;
+  text-align: center;
+}
+
+#bg_color_cell {
+  background: #05668D;
+}
+
+#web_control_cell {
+  background: #028090;
+  border-radius: 0 20px 20px 0;
+}
+
+#web_control_cell #web_control_cell_content {
+  display: grid;
+  grid-template-columns: 200px;
+}
+
+#web_control_cell_content button {
+  margin: 5px auto;
+  background-color: #505050;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+
+.cmd {
+  background: none;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+#result_cell {
+  padding: 0 30px 30px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.output_title {
+  color: black;
+  text-align: center;
+  display: block;
+  font: 60px bold;
+  padding: 0 20px;
+  margin: 7px;
+  font-family: 'Do Hyeon', sans-serif;
+  border-bottom: dashed 3px dimgray;
+  display: block;
+}
+
+#commands {
+  height: auto;
+  margin: 20px;
+}
+
+.misc_button {
+  color: seashell;
+  background-color: #990000;
+  border-radius: 8px;
+  border: none;
+  text-shadow:  2px 2px 7px #000000aa;
+  width: auto;
+  height: 25px;
+  font-weight: bold;
+  padding: 0px 15px;
+  vertical-align: middle;
+  margin: 2px;
+  display: inline-block;
+}
+
+.no_background {
+  color: black;
+  background-color: initial;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: none;
+  padding: 0;
+  margin: 2px 10px;
+}
+
+.no_background .tooltip-text {
+  font-size: initial;
+  font-weight: initial;
+}
+
+#justInput {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bgColor {
+  height: 50px;
+  width: 50px;
+  border: solid 1px black;
+}
+
+.inputTitle {
+  display: block;
+  width: 100%;
+  font-family: 'Do Hyeon', sans-serif;
+  background: none;
+  border: none;
+  font-size: 40px;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+.inputTitle:focus {
+  font-family: sans-serif;
+  background: white;
+  border: dashed 2px black;
+}
+
+.keep_press {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: large;
+  font-weight: bold;
+  height: 0;
+  width: 0;
+}
+
+
+.accrue_container {
+  width: 36px;
+  height: 55px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.accrue_container button {
+  padding: 0;
+}
+
+.accrue_button_container {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  border: none;
+}
+
+#inputTarget {
+  border: dashed 3px #00000055;
+  border-radius: 10px;
+  position: relative;
+  top: -3px; /* border 값과 같아야합니다. */
+  left: -3px; /* border 값과 같아야합니다. */
+}
+
+.accrue_text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+
+.actual_input_container {
+  position: relative;
+  width: 36px;
+  height: calc(36px + 19px + 10px);
+  display: inline-block;
+  border: none;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.actual_input_title_container {
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+  left: 2px;
+}
+
+.actual_input_text {
+  vertical-align: top;
+  font-weight: bold;
+  margin: 0 0 -2px 0;
+  padding: 0;
+}
+
+.actual_input_button {
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  display: inline-block;
+}
+
+.actual_input_button button {
+  width: 19px;
+  height: 19px;
+}
+
+.input_result_button_container {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  top: initial !important;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+#inputTarget .actual_input_button {
+  margin-left: 2px;
+  
+}
+
+
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 13px;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/* 커스텀 버튼 파란 줄 없애기 */
+button {
+  outline: none;
+}
+
+.expand {
+  color: #3F3F3F;
+  background: #F1F1F1;
+  border-radius: 5px;
+  text-shadow:  2px 2px 5px gray;
+  width: auto;
+  height: 25px;
+  font-weight: bold;
+  padding: 0px 15px 4px 15px;
+  vertical-align: middle;
+  margin: 2px;
+  border: none;
+  display: none;
+}
+
+.show {
+  display: inline-block !important;
+}
+
+.highlighter {
+  display: block;
+  background: ForestGreen;
+  width: 100%;
+  height: 36px;
+  opacity: 0.3;
+}
+
+
+/* 반응형 웹 */
+@media(max-width: 1080px) {
+  #white_cell {
+    border-radius: 20px 20px 0 0;
+  }
+
+  #web_control_cell {
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .grid_class {
+    grid-template-columns: 1fr;
+  }
+  
+  .expand {
+    display: inline-block;
+  }
+  
+  #misc_cell_content>button:not(.expand) {
+    display: none;
+  }
+  
+  #command_cell #command_cell_content #command_cell_div1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  #command_cell #command_cell_content #command_cell_div2 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .header_title {
+    display: none;
+  }
+  
+  #web_control_cell_content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #web_control_cell #web_control_cell_content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  
+  .minimize {
+    display: block;
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: hidden;
+  }
+  
+  .output_title {
+    font-size: 30px;
+  }
+  
+  .inputTitle {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 400px) {
+  .cmd {
+    width: 27px;
+    height: 27px;
+  }
+  
+  #white_cell #white_cell_content {
+    grid-template-columns: repeat(3, 27px);
+  }
+  
+  #white_cell #black_cell_content {
+    grid-template-columns: repeat(3, 27px);
+  }
+  
+  .bgColor {
+    width: 30px;
+  }
+}
