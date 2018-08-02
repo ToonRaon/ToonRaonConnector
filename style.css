@@ -1,11 +1,10 @@
-@font-face {
-  font-family: 'NanumGothic';
-  src: url(./fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
-       url(./fonts/NanumGothic.woff) format('woff')
-}
+/* @font-face {
+  font-family: 'NanumBarunGothic';
+  src: url(./fonts/NanumBarunGothic.ttf);
+} */
 
 body, button {
-  font-family: 'NanumGothic';
+/*   font-family: 'NanumBarunGothic'; */
   margin: 0;
 }
 
@@ -44,6 +43,26 @@ body, button {
   cursor: pointer;
 }
 
+.whale {
+  text-align: center;
+  background: #B5D3DB;
+  font-size: larger;
+  padding: 5px;
+  color: black;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.whale p {
+  padding: 0;
+  margin: 0;
+}
+
+.whale a {
+  color: ForestGreen;
+  cursor: pointer;
+}
+
 .header {
   background-color: dimgray;
   color: white;
@@ -52,16 +71,9 @@ body, button {
   text-align: center;
   box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
   width: 100%;
-  height: 40px;
   text-shadow: 2px 2px 8px black;
   text-decoration: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 40px;
+  cursor: pointer;
 }
 
 .header a {
@@ -151,4 +163,10 @@ body, button {
   list-style-type: square;
   text-decoration: none;
   margin-bottom: 3px;
+}
+
+.features a:link, .features a:visited {
+  color: initial;
+  cursor: text;
+  pointer-events: none;
 }
