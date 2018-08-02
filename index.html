@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>ToonRaon 싸지방 접속기</title>
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -51,7 +51,7 @@
         
         function connectorDownload() {
           if(downloadOnIE(false)) { //ie가 아닐 때
-            return window.location.href='/prev-versions/ROKA_Google_Youtube_v2.7.bat'; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
+            return window.location.href='/prev-versions/ROKA_Google_Youtube_v2.8.bat'; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
           } else { // ie 일 때
             alert("인터넷 익스플로러는 직접 다운로드가 불가능합니다.");
             
@@ -65,15 +65,15 @@
       </script>
 
       <button class="button" id="downloadButton" style="margin: auto; display: block;" onclick="connectorDownload();">접속기 <strong>다운로드</strong></button>
-      <a onclick="return false;" href="/prev-versions/ROKA_Google_Youtube_v2.7.bat" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장하세요.</a>
+      <a onclick="return false;" href="./prev-versions/ROKA_Google_Youtube_v2.8.bat" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장하세요.</a>
       
-      <img src="/main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
+      <img src="./main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
       
       <!-- 아래쪽 기타 링크들 -->
       <div class="extraInfos">
         <ul class="infoList" padding="0px">
-          <li><a href="/prev-versions/" target="_self">다른버전</a></li>
-          <li><a href="/release-notes/" target="_self">패치내역</a></li>
+          <li><a href="./prev-versions/" target="_self">다른버전</a></li>
+          <li><a href="./release-notes/" target="_self">패치내역</a></li>
           <li><a href="https://github.com/ToonRaon/ROKA_Google_Youtube" target="_blank">Github</a></li>
         </ul>
       </div>
