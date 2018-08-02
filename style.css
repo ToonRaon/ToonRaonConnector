@@ -63,6 +63,17 @@ body, button {
   cursor: pointer;
 }
 
+.whale img {
+  width: 64px;
+  height: 64px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.whale p {
+  font-size: 30px;
+}
+
 .header {
   background-color: dimgray;
   color: white;
