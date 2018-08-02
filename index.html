@@ -17,21 +17,21 @@
     </script>
   </head>
   <body>
-    <div class="header" id="myHeader">
-      <h1><a href="http://toonraon.dothome.co.kr">ToonRaon 싸지방 구글, 유튜브 접속기</a></h1>
-<!--       <p style="margin-top: 0;">http://toonroan.cf/</p> -->
+    <div class="header" id="myHeader" onclick="window.location = 'http://toonraon.cf';">
+      <h1>ToonRaon 싸지방 구글, 유튜브 접속기</h1>
+      <p style="margin: 0;">http://toonroan.cf/</p>
     </div>
     <div class="content">
       <div class="notice">
-        <p>
-          <strong>공지!</strong> 2018.07.18 싸지방에서 '네이버 웨일' 다운로드 사이트가 <strong>유해 사이트</strong>로 지정되어 웨일 다운로드가 불가능합니다.
-        </p>
-        <p>
-          네이버 웨일을 사용하고 싶은 분들은 <strong><a href="https://drive.google.com/uc?export=download&confirm=YLdv&id=1QXm_GH11R33Tgz-K3lWt8Mvwxxss1fc7" target="_blank">여기</a></strong>(혹은 <strong><a href="https://download1023.mediafire.com/3hm204ut8zmg/b7ee8d39wgegr11/Whale.zip">여기</a></strong>)에서 다운로드 받은 후 압축을 풀고 사용하세요.
-        </p>
-        <p style="margin-top: 10px;">
-          ※ 구버전 브라우저에서 다운로드가 안 뜨던 현상을 수정하였습니다.
-        </p>
+        <h1 style="margin: 0 0 10px 0;">
+          공지
+        </h1>
+        <p>현재 이 접속기 사이트는 무료 호스팅을 사용하고 있습니다. 따라서 많은 분들이 접속할 경우 서버가 다운 될 수 있습니다.</p>
+        <p>유료 호스팅 서버를 알아보고 있으며, 그 전까지는 서버가 다운되는 현상이 일어날 수 있습니다.</p>
+        <p>서버가 다운될 경우 네이버에서 '싸지방 접속기'를 검색 후 가장 위에 뜨는 블로그에서 다운로드 받으시길 바랍니다.</p>
+      </div>
+      <div class="whale">
+        <p><img src="./images/smalllogo.png" style="width: 32px; height: 32px; display: inline; vertical-align: middle;"><strong>네이버 웨일</strong>을 사용하고 싶은 분들은 <a href="https://blog.naver.com/toonraon/221330849213" target="_blank"><strong>여기</strong></a>를 참고하세요.</p>
       </div>
       <p style="margin: 50px auto 0 auto; text-align: center; font-size: xx-large;"><strong>싸지방</strong>에서까지 <strong>스트레스</strong> 받을 필요는 없잖아?</p>
       <p style="margin: 0 auto 50px auto; text-align: center; color:#555555">접속기를 사용하여 구글, 유튜브에 마음껏 접속하세요!</p>
@@ -51,7 +51,7 @@
         
         function connectorDownload() {
           if(downloadOnIE(false)) { //ie가 아닐 때
-            return window.location.href='./prev-versions/ROKA_Google_Youtube_v2.7.bat'; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
+            return window.location.href='/prev-versions/ROKA_Google_Youtube_v2.7.bat'; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
           } else { // ie 일 때
             alert("인터넷 익스플로러는 직접 다운로드가 불가능합니다.");
             
@@ -67,13 +67,13 @@
       <button class="button" id="downloadButton" style="margin: auto; display: block;" onclick="connectorDownload();">접속기 <strong>다운로드</strong></button>
       <a onclick="return false;" href="/prev-versions/ROKA_Google_Youtube_v2.7.bat" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장하세요.</a>
       
-      <img src="./main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
+      <img src="/main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
       
       <!-- 아래쪽 기타 링크들 -->
       <div class="extraInfos">
         <ul class="infoList" padding="0px">
-          <li><a href="./prev-versions/" target="_self">다른버전</a></li>
-          <li><a href="./release-notes/" target="_self">패치내역</a></li>
+          <li><a href="/prev-versions/" target="_self">다른버전</a></li>
+          <li><a href="/release-notes/" target="_self">패치내역</a></li>
           <li><a href="https://github.com/ToonRaon/ROKA_Google_Youtube" target="_blank">Github</a></li>
         </ul>
       </div>
@@ -104,27 +104,5 @@
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </p>
     </div>
-
-    
-    <!-- 스티키 헤더 -->
-    <script>
-      // When the user scrolls the page, execute myFunction 
-      window.onscroll = function() {myFunction()};
-
-      // Get the header
-      var header = document.getElementById("myHeader");
-
-      // Get the offset position of the navbar
-      var sticky = header.offsetTop;
-
-      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script>
   </body>
 </html>
