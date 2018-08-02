@@ -1,10 +1,10 @@
-/* @font-face {
+ @font-face {
   font-family: 'NanumBarunGothic';
   src: url(./fonts/NanumBarunGothic.ttf);
-} */
+} 
 
 body, button {
-/*   font-family: 'NanumBarunGothic'; */
+  font-family: 'NanumBarunGothic'; 
   margin: 0;
 }
 
