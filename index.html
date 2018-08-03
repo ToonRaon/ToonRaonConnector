@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
     <meta property="og:type" content="website">
-    
+    <script src="./script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122314368-1"></script>
     <script>
@@ -40,36 +40,6 @@
       </div>
       <p style="margin: 50px auto 0 auto; text-align: center; font-size: xx-large;"><strong>싸지방</strong>에서까지 <strong>스트레스</strong> 받을 필요는 없잖아?</p>
       <p style="margin: 0 auto 50px auto; text-align: center; color:#555555">접속기를 사용하여 구글, 유튜브에 마음껏 접속하세요!</p>
-      
-      <script>
-        // ie에서 다운로드를 시도할 경우 return false
-        function downloadOnIE(msg) {
-          return true; // test code
-          
-          // ie
-          if(navigator.appVersion.indexOf("MSIE")!=-1 || (!!window.MSInputMethodContext && !!document.documentMode)) {
-            if(msg) alert("인터넷 익스플로러에서는 그냥 다운로드가 되지 않습니다.\n\n우클릭 - 다른 이름으로 대상 저장 - 파일 이름 제일 뒤에 '.bat'을 붙여서 저장해주세요.\n\n(그냥 저장하면 파일 확장자가 .man이라는 이상한 확장자로 저장되어 실행되지 않습니다.)");
-
-            return false; // 다운로드 비허용
-          } else { // ie가 아닐 때
-            return true; // 다운로드 허용
-          }
-        }
-        
-        function connectorDownload() {
-          if(downloadOnIE(false)) { //ie가 아닐 때
-            return window.location.href="./prev-versions/ROKA_Google_Youtube_v2.8.zip"; // 다운로드 링크 바꿀 때 아래 숨긴 텍스트에 연결된 ie용 링크도 바꿔야합니다.
-          } else { // ie 일 때
-            alert("인터넷 익스플로러는 직접 다운로드가 불가능합니다.");
-            
-            var btn = document.getElementById("downloadButton");
-            btn.style.display = "none"; // 버튼 사라짐
-            
-            var hiddenText = document.getElementById("hiddenText");
-            hiddenText.style.display = "block";
-          }
-        }
-      </script>
 
       <button class="button" id="downloadButton" style="margin: auto; display: block;" onclick="connectorDownload();">접속기 <strong>다운로드</strong></button>
       <a onclick="return false;" href="./prev-versions/ROKA_Google_Youtube_v2.8.zip" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장으로 저장하세요.</a>
