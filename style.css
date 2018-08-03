@@ -77,7 +77,7 @@ body, button {
 .header {
   background-color: dimgray;
   color: white;
-  padding: 10px;
+  padding: 30px;
   margin: 0;
   text-align: center;
   box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
@@ -118,6 +118,7 @@ body, button {
   height: 60px;
   width: 250px;
   cursor: pointer;
+  box-shadow: 2px 2px 7px #000000aa;
 }
 
 .button:hover {
@@ -180,4 +181,37 @@ body, button {
   color: initial;
   cursor: text;
   pointer-events: none;
+}
+
+#sns-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#sns-share {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#sns-title {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+
+#sns-button-container {
+  text-align: center;
+  height: 36px;
+}
+
+#sns-button-container>img {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 2px 2px 3px #00000055;
+  cursor: pointer;
 }
