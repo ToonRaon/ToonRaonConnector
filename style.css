@@ -81,7 +81,6 @@ body, button {
   margin: 0;
   text-align: center;
   box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
-  width: 100%;
   text-shadow: 2px 2px 8px black;
   text-decoration: none;
   cursor: pointer;
