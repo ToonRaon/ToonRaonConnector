@@ -1,7 +1,14 @@
  @font-face {
   font-family: 'NanumBarunGothic';
-  src: url(./fonts/NanumBarunGothic.ttf);
-} 
+  src: url(http://drive.toonraon.cf/upload/fonts/NanumBarunGothic.ttf);
+}
+
+@font-face {
+  font-family: 'DoHyeon';
+  src: url(http://drive.toonraon.cf/upload/fonts/DoHyeon.ttf);
+}
+
+
 
 body, button {
   font-family: 'NanumBarunGothic'; 
@@ -84,6 +91,10 @@ body, button {
   text-shadow: 2px 2px 8px black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.header * {
+  font-family: DoHyeon;
 }
 
 .header a {
