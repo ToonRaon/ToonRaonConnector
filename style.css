@@ -94,7 +94,7 @@ body, button {
 }
 
 .header * {
-  font-family: DoHyeon;
+  font-family: 'DoHyeon';
 }
 
 .header a {
@@ -104,16 +104,16 @@ body, button {
 }
 
 .header h1 {
-  cursor: pointer;
   margin: 0;
   display: inline;
+  font-size: 50px;
+  font-weight: normal;
 }
 
-.header h5 {
-  cursor: pointer;
+.header #url {
+  font-family: 'NanumBarunGothic';
   margin: 0;
-  display: inline;
-  margin-left: 350px
+  font-size: 25px;
 }
 
 .button {
