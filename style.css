@@ -111,7 +111,7 @@ body, button {
 }
 
 .header #url {
-  font-family: 'NanumBarunGothic';
+  font-family: 'NanumBarunGothic'!important;
   margin: 0;
   font-size: 25px;
 }
