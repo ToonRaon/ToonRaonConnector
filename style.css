@@ -48,6 +48,7 @@ body, button {
 .notice a {
   color: ForestGreen;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .whale {
