@@ -1,8 +1,9 @@
  @font-face {
-  font-family: 'NanumBarunGothic';
+  font-family: "Nanum Gothic";
   src: url(http://drive.toonraon.cf/upload/fonts/NanumBarunGothic.ttf);
 }
 
 body {
   padding-top: 50px;
+  font-family: "Nanum Gothic"
 }
