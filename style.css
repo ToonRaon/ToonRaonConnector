@@ -1,6 +1,14 @@
- @font-face {
-  font-family: "Nanum Gothic";
-  src: url(http://drive.toonraon.cf/upload/fonts/NanumBarunGothic.ttf);
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/nanum-gothic-v9-korean-regular.eot'); /* IE9 Compat Modes */
+  src: local('NanumGothic'),
+       url('./fonts/nanum-gothic-v9-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/nanum-gothic-v9-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/nanum-gothic-v9-korean-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/nanum-gothic-v9-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/nanum-gothic-v9-korean-regular.svg#NanumGothic') format('svg'); /* Legacy iOS */
 }
 
 body {
