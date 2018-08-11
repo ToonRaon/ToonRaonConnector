@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="ToonRaon 싸지방 접속기를 이용하면 싸지방에서도 구글, 유튜브에 접속할 수 있지 말입니다?">
     <meta property="og:title" content="ToonRaon 싸지방 접속기">
     <meta property="og:description" content="ToonRaon 싸지방 접속기를 이용하면 싸지방에서도 구글, 유튜브에 접속할 수 있지 말입니다?">
@@ -11,8 +14,17 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
     <meta property="og:type" content="website">
-    <script src="./script.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="./plug-in/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 커스텀 스크립트 -->
+    <script type="text/javascript" src="./script.js"></script>
+
+    <!-- 구글 애널리틱스 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122314368-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,56 +33,17 @@
 
       gtag('config', 'UA-122314368-1');
     </script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div class="header" id="myHeader" onclick="window.location = 'http://toonraon.cf';">
-      <h1>ToonRaon 싸지방 구글, 유튜브 접속기</h1>
-      <p id="url">http://toonroan.cf/</p>
-    </div>
-    <div class="content">
-      <div class="notice">
-        <h1 style="margin: 0 0 10px 0;">
-          공지
-        </h1>
-        <p><a href="https://whale.naver.com/" target="_blank">네이버 웨일 홈페이지</a>가 유해 사이트에서 해제되었습니다.</p>
-        <p>부대마다 다를 수 있으니 확인해보시기 바랍니다.</p>
-      </div>
-      <div class="whale">
-        <p><img src="./images/smalllogo.png"><strong>네이버 웨일</strong>을 사용하고 싶은 분들은 <a href="http://drive.toonraon.cf/upload/whale/WhaleSetupX86.exe" download="네이버 웨일 설치 파일(오프라인 버전).exe"><strong>여기</strong></a>에서 다운로드하세요.</p>
-      </div>
-      <p style="margin: 50px auto 0 auto; text-align: center; font-size: xx-large;"><strong>싸지방</strong>에서까지 <strong>스트레스</strong> 받을 필요는 없잖아?</p>
-      <p style="margin: 0 auto 50px auto; text-align: center; color:#555555">접속기를 사용하여 구글, 유튜브에 마음껏 접속하세요!</p>
+    
+    
 
-      <button class="button" id="downloadButton" style="margin: auto; display: block;" onclick="connectorDownload();">접속기 <strong>다운로드</strong></button>
-      <a onclick="return false;" href="./prev-versions/ROKA_Google_Youtube_v2.8.zip" download style="display: none; text-align: center;" id="hiddenText">여기에 대고 우클릭 - 다른 이름으로 대상 저장으로 저장하세요.</a>
-      
-      <img src="./main.PNG" align="middle" style="border-radius: 8px; margin: 50px auto; 50px auto; display:block; width:500px; height:auto;"/>
-      
-      <!-- SNS 공유 -->
-      <div id="sns-container">
-        <div id="sns-share">
-          <!-- <div id="sns-title">공유하기</div> -->
-          <div id="sns-button-container">
-            <img src="./images/facebook.png" onclick="shareSNS('facebook');">
-            <img src="./images/twitter.png" onclick="shareSNS('twitter');">
-            <img src="./images/googleplus.png" onclick="shareSNS('googleplus');">
-            <img src="./images/naverblog.png" onclick="shareSNS('naverblog');">
-            <!-- <img src="./images/band.png" onclick="shareSNS('band');"> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- 아래쪽 기타 링크들 -->
-      <div class="extraInfos">
-        <ul class="infoList" padding="0px">
-          <li><a href="./prev-versions/" target="_self">다른버전</a></li>
-          <li><a href="./release-notes/" target="_self">패치내역</a></li>
-          <li><a href="https://github.com/ToonRaon/ToonRaonConnector" target="_blank">Github</a></li>
-        </ul>
-      </div>
-      
-      
-
+    <div>
       <p>
         <!-- 덧글 기능 -->
         <div id="disqus_thread"></div>
@@ -95,5 +68,9 @@
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </p>
     </div>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
