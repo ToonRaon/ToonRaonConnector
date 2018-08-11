@@ -13,5 +13,5 @@
 
 body {
   padding-top: 50px;
-  font-family: "Nanum Gothic"
+  font-family: "Nanum Gothic" !important;
 }
