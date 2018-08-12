@@ -96,6 +96,22 @@ h2 {
 
 
 
+.badge-container {
+  position: relative;
+}
+
+.badge-recommand {
+  position: absolute;
+  bottom: 20px;
+  left: -17px;
+  background-color: red;
+  transform: rotate(-30deg);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
 .img-responsive-center {
   margin-left: auto;
   margin-right: auto;
