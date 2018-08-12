@@ -15,3 +15,29 @@ function shareSNS(type) {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+// 최신 버전 접속기 다운로드 버튼 링크 설정 (https 통신을 해야하기 때문에 구 버전 브라우저에서 실행이 불가능하다.... ㅠㅠㅠ)
+function GetLatestReleaseDownloadURL() {
+  $.getJSON("https://api.github.com/repos/ToonRaon/ToonRaonConnector/releases/latest").done(function(release) {
+    var asset = release.assets[0];
+    // var downloadCount = 0;
+    // for (var i = 0; i < release.assets.length; i++) {
+    //   downloadCount += release.assets[i].download_count;
+    // }
+    // var oneHour = 60 * 60 * 1000;
+    // var oneDay = 24 * oneHour;
+    // var dateDiff = new Date() - new Date(asset.updated_at);
+    // var timeAgo;
+    // if (dateDiff < oneDay) {
+    //   timeAgo = (dateDiff / oneHour).toFixed(1) + " hours ago";
+    // } else {
+    //   timeAgo = (dateDiff / oneDay).toFixed(1) + " days ago";
+    // }
+    // var releaseInfo = release.name + " was updated " + timeAgo + " and downloaded " + downloadCount.toLocaleString() + " times.";
+    $(".download-lasted-version").attr("href", asset.browser_download_url);
+    // $(".release-info").text(releaseInfo);
+    // $(".release-info").fadeIn("slow");
+  });
+}
+
+// GetLatestReleaseDownloadURL();
