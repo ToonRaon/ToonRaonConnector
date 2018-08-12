@@ -55,6 +55,18 @@ h2 {
   font-size: 25px;
 }
 
+.small-icon {
+  width: 36px;
+  height: 36px;
+}
+
+
+
+.text-white {
+  color: white !important;
+}
+
+
 
 .mb-1 {
   margin-bottom: 20px;
