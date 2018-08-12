@@ -96,6 +96,13 @@ h2 {
 
 
 
+.img-responsive-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .github-box {
   display: inline-block;
   background: lightgray;
