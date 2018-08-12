@@ -1,5 +1,9 @@
 # ToonRaonConnector
 
+
+[![다운로드 횟수](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/ToonRaon/ToonRaonConnector/releases)
+
+
 ## 홈페이지 주소
 
 http://toonraon.cf/
