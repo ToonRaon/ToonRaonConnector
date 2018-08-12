@@ -46,3 +46,13 @@ body {
 .content {
 	font-family: 'Do Hyeon', sans-serif;
 }
+
+.faq-title {
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 5px #ACACAC;
+}
+
+.faq-content {
+	font-size: 30px !important;
+	color: #404040;
+}
