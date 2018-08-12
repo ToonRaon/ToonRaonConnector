@@ -61,8 +61,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">홈</a></li>
-            <li><a href="/prev-versions">기타 버전</a></li>
-            <li><a href="/release-notes">패치 내역</a></li>
+            <li><a href="https://github.com/ToonRaon/ToonRaonConnector/releases">기타 버전</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -86,7 +85,7 @@
           </a>
         </div>
         <div>
-          <a href="./prev-versions">다른 버전 다운로드하러 가기</a>
+          <a href="https://github.com/ToonRaon/ToonRaonConnector/releases">다른 버전 다운로드하러 가기</a>
         </div>
       </div>
 
@@ -110,47 +109,61 @@
 
       <!-- 메인 이미지 -->
       <img src="./images/main.png" class="mb-3 box-shadow br-8">
-    </div><!-- /.container -->
 
-    <!-- SNS 공유 -->
-    <div class="container text-center mb-5">
-      <div class="lead mb-1"><strong>SNS 공유하기</strong></div>
-      <div id="sns-button-container">
-        <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/facebook.png" onclick="shareSNS('facebook');">
-        <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/twitter.png" onclick="shareSNS('twitter');">
-        <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/googleplus.png" onclick="shareSNS('googleplus');">
-        <img class="middle-icon pointer box-shadow hover-bright br-5" src="./images/naverblog.png" onclick="shareSNS('naverblog');">
-        <!-- <img src="./images/band.png" onclick="shareSNS('band');"> -->
+      <!-- SNS 공유 -->
+      <div class="container text-center mb-5">
+        <div class="lead mb-1"><strong>SNS 공유하기</strong></div>
+        <div id="sns-button-container">
+          <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/facebook.png" onclick="shareSNS('facebook');">
+          <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/twitter.png" onclick="shareSNS('twitter');">
+          <img class="middle-icon pointer box-shadow hover-bright br-5 mr-2" src="./images/googleplus.png" onclick="shareSNS('googleplus');">
+          <img class="middle-icon pointer box-shadow hover-bright br-5" src="./images/naverblog.png" onclick="shareSNS('naverblog');">
+          <!-- <img src="./images/band.png" onclick="shareSNS('band');"> -->
+        </div>
       </div>
-    </div>
 
+      <div class="container text-center mb-5">
+        <div class="lead mb-1"><strong>소스 코드 보기</strong></div>
+        <a href="https://github.com/ToonRaon/ToonRaonConnector/tree/master/prev-versions" target="_blank">
+          <div class="github-box pointer mb-1">
+            <img src="./images/github.png">
+            <strong>Github</strong>
+          </div>
+        </a>
+        <p class="text-muted">
+          ToonRaon 싸지방 접속기는 오픈 소스입니다.
+          <br>
+          누구든지 코드를 수정하여 <a href="https://github.com/ToonRaon/ToonRaonConnector/pulls">접속기 성능 향상에 도움</a>을 줄 수 있습니다.
+        </p>
+      </div>
 
+      <div>
+        <p>
+          <!-- 덧글 기능 -->
+          <div id="disqus_thread"></div>
+          <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://toonraon.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+          </script>
 
-    <div>
-      <p>
-        <!-- 덧글 기능 -->
-        <div id="disqus_thread"></div>
-        <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://toonraon.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+      </div>
 
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </p>
-    </div>
+    </div><!-- /.container -->
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->

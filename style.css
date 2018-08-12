@@ -42,7 +42,11 @@ body {
 
 
 .hover-bright:hover {
-  -webkit-filter: brightness(150%);
+  -webkit-filter: brightness(130%);
+}
+
+.hover-bright:active {
+  -webkit-filter: brightness(70%);
 }
 
 
@@ -88,6 +92,32 @@ h2 {
 
 .download-icon {
   vertical-align: text-top;
+}
+
+
+
+.github-box {
+  display: inline-block;
+  background: lightgray;
+  padding: 5px 15px;
+  border: solid gray 2px;
+  border-radius: 10px;
+  vertical-align: text-bottom;
+  font-size: 20px;
+  color: black !important;
+}
+
+.github-box>img {
+  width: 25px;
+  height: 25px;
+}
+
+.github-box:hover {
+  background: gray;
+}
+
+.github-box:active {
+  background: dimgray;
 }
 
 
