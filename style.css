@@ -46,7 +46,11 @@ h2 {
 }
 
 .box-shadow {
-  box-shadow: 2px 2px 7px gray;
+  box-shadow: 3px 3px 7px gray;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px gray;
 }
 
 .btn-big {
@@ -60,6 +64,15 @@ h2 {
   height: 36px;
 }
 
+.middle-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.download-icon {
+  vertical-align: text-top;
+}
+
 
 
 .text-white {
@@ -69,7 +82,7 @@ h2 {
 
 
 .mb-1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .mb-2 {
@@ -122,4 +135,10 @@ h2 {
 
 .br-10 {
   border-radius: 10px;
+}
+
+
+
+.pointer {
+  cursor: pointer;
 }

@@ -73,27 +73,44 @@
       <h4 class="text-muted mb-3">접속기를 사용하여 구글과 유튜브를 마음껏 즐기세요!</h4>
 
       <div class="container mb-3">
-        <a href="./prev-versions/ROKA_Google_Youtube_v2.8.zip" download>
-          <button type="button" class="btn btn-lg btn-success box-shadow btn-big">
-            <strong class="mr-1">접속기 다운로드</strong>
-            <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
-          </button>
-        </a>
+        <div class="mb-1">
+          <a href="./prev-versions/ROKA_Google_Youtube_v2.8.zip" download>
+            <button type="button" class="btn btn-lg btn-success box-shadow btn-big">
+              <strong class="mr-1">접속기 다운로드</strong>
+              <span class="glyphicon glyphicon-save download-icon" aria-hidden="true" ></span>
+            </button>
+          </a>
+        </div>
+        <div>
+          <a href="./prev-versions" class="text-muted">다른 버전 다운로드하러 가기</a>
+        </div>
+      </div>
+
+      <!-- 웹 브라우저 다운로드 -->
+      <div class="container text-center mb-3">
+        <div class="lead mb-1"><strong>웹 브라우저 다운로드</strong></div>
+        <div>
+          <a href="https://whale.naver.com"><img src="./images/browser-icons/whale.png" class="middle-icon mr-3" data-toggle="tooltip" data-placement="bottom" title="네이버 웨일"></a>
+          <a href="https://opera.com"><img src="./images/browser-icons/opera.png" class="middle-icon mr-3" data-toggle="tooltip" data-placement="bottom" title="오페라"></a>
+          <a href="https://www.mozilla.org/ko/firefox/"><img src="./images/browser-icons/firefox.png" class="middle-icon mr-3" data-toggle="tooltip" data-placement="bottom" title="파이어폭스"></a>
+          <a href="https://www.google.com/intl/ko_ALL/chrome/"><img src="./images/browser-icons/chrome.png" class="middle-icon" data-toggle="tooltip" data-placement="bottom" title="구글 크롬"></a>
+        </div>
       </div>
 
       <img src="./images/main.png" class="mb-3 box-shadow br-8">
     </div><!-- /.container -->
 
     <!-- SNS 공유 -->
-      <div class="container text-center">
-        <div id="sns-button-container">
-          <img class="small-icon box-shadow br-5 mr-1" src="./images/facebook.png" onclick="shareSNS('facebook');">
-          <img class="small-icon box-shadow br-5 mr-1" src="./images/twitter.png" onclick="shareSNS('twitter');">
-          <img class="small-icon box-shadow br-5 mr-1" src="./images/googleplus.png" onclick="shareSNS('googleplus');">
-          <img class="small-icon box-shadow br-5" src="./images/naverblog.png" onclick="shareSNS('naverblog');">
-          <!-- <img src="./images/band.png" onclick="shareSNS('band');"> -->
-        </div>
+    <div class="container text-center mb-5">
+      <div class="lead mb-1"><strong>SNS 공유하기</strong></div>
+      <div id="sns-button-container">
+        <img class="small-icon pointer box-shadow br-5 mr-1" src="./images/facebook.png" onclick="shareSNS('facebook');">
+        <img class="small-icon pointer box-shadow br-5 mr-1" src="./images/twitter.png" onclick="shareSNS('twitter');">
+        <img class="small-icon pointer box-shadow br-5 mr-1" src="./images/googleplus.png" onclick="shareSNS('googleplus');">
+        <img class="small-icon pointer box-shadow br-5" src="./images/naverblog.png" onclick="shareSNS('naverblog');">
+        <!-- <img src="./images/band.png" onclick="shareSNS('band');"> -->
       </div>
+    </div>
 
 
 
