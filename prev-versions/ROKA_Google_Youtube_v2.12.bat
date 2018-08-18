@@ -223,6 +223,10 @@ echo 216.58.192.77 notifications.google.com >>hosts
 echo 216.58.192.77 chrome-devtools-frontend.appspot.com >>hosts
 echo 216.58.192.77 googleapis.l.google.com >>hosts
 echo 216.58.192.77 www.googleapis.com >>hosts
+echo 216.58.192.77 ssl.google-analytics.com >>hosts
+echo 216.58.192.77 plus.google.com >>hosts
+echo 216.58.192.77 books.google.com >>hosts
+echo 216.58.192.77 books.google.co.kr >>hosts
 
 
 rem ±¤°í Â÷´Ü
