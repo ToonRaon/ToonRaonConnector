@@ -60,6 +60,15 @@ body {
 .notice {
   background-color: #B9121B;
   color: #FCFAE1;
+  padding: 20px;
+}
+
+.notice .title {
+  margin: 0;
+}
+
+.notice .content {
+  font-size: large;  
 }
 
 
