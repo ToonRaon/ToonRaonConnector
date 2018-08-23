@@ -57,6 +57,13 @@ body {
 
 
 
+.notice {
+  background-color: #B9121B;
+  color: #FCFAE1;
+}
+
+
+
 h2 {
   font-size: 45px !important;
 }
