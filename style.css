@@ -71,6 +71,10 @@ body {
   font-size: large;  
 }
 
+.notice a {
+  font-weight: bold;
+}
+
 
 
 h2 {
