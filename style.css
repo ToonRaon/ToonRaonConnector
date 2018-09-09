@@ -269,6 +269,8 @@ h2 {
 #survey-close {
   background: red;
   color: black;
+  border: none;
+  border-radius: 3px;
 }
 
 .hidden {
