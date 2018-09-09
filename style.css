@@ -269,10 +269,14 @@ h2 {
 }
 
 #survey-close {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
   background: red;
   color: black;
   border: none;
   border-radius: 3px;
+  font-weight: bold;
 }
 
 .hidden {
