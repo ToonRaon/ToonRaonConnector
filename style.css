@@ -259,11 +259,13 @@ h2 {
 #survey-dialog {
   display: block;
   position: fixed;
-  top: 20px;
+  top: 0;
   width: 100vw;
   height: 100vw;
   background: #AAAAAAAA;
-  z-index: 100;
+  z-index: 9999;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #survey-close {
