@@ -219,7 +219,7 @@ h2 {
 .mr-5 {
   margin-right: 50px;
 }
-
+ 
 
 
 .br-5 {
@@ -265,6 +265,11 @@ h2 {
   background: #AAAAAAAA;
   z-index: 100;
   padding: 50px 50px;
+}
+
+#survey-close {
+  background: red;
+  color: white;
 }
 
 .hidden {
