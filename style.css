@@ -65,6 +65,7 @@ body {
 
 .notice .title {
   margin-top: 0;
+  font-family: "Do Hyeon", sans-serif !important;
 }
 
 .notice .content {
@@ -260,9 +261,8 @@ h2 {
   display: block;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   background: #AAAAAAAA;
   z-index: 9999;
   padding-top: 50px;
