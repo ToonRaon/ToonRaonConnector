@@ -68,18 +68,26 @@
       </div>
     </nav>
     
-<!--     <div class="row notice text-center mb-2">
+    <div class="row notice text-center mb-2">
       <h2 class="title">
         <strong>공지</strong>
       </h2>
       <div class="content container">
-        <a href="https://whale.naver.com/">네이버 웨일 사이트</a>가 보안상의 문제로 구 버전 웹 브라우저에서 접속이 불가능하도록 바뀌었습니다.
+        <strong>도메인 주소 변경에 관한 설문조사</strong>가 진행 중입니다.
         <br>
-        웨일 사이트로 이동하는 것이 아니라 웨일 파일을 바로 다운로드 받는 링크로 변경하였습니다.
+        시간 여유가 되시는 분들은 <a id="survey">여기</a>를 클릭하여 간단한 설문에 참여해주세요!
         <br>
-        아래의 웹 브라우저 다운로드에서 <strong>웨일 아이콘을 선택하시면 웨일 다운로드가 정상적으로 될 겁니다.</strong>
+        ※ 구글 설문지 사이트로 이동하여야 하므로 <strong>접속기를 실행한 후</strong> 링크를 클릭해주세요.
       </div>
-    </div> -->
+      <div id="survey-dialog" class="hidden">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflcOF2p1YOxH2p2pZyhQlOW27bcEPOPI3Mw5B2AU9RGHRlYA/viewform?embedded=true" width="640" height="999" frameborder="0" marginheight="0" marginwidth="0">로드 중... 반드시 접속기 패치를 진행 후 설문 조사에 응해주세요.</iframe>
+      </div>
+      <script>
+        $("#survey").click(function() {
+          $("#survey-dialog").removeClass("hidden");
+        });
+      </script>
+    </div>
 
     <div class="container text-center">
 

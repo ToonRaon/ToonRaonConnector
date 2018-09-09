@@ -252,3 +252,17 @@ h2 {
 .text-middle {
   vertical-align: middle;
 }
+
+
+
+#survey-dialog {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background: #AAAAAAAA;
+}
+
+.hidden {
+  display: none !important;
+}
