@@ -260,8 +260,8 @@ h2 {
   display: block;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   background: #AAAAAAAA;
   z-index: 9999;
   padding-top: 50px;
