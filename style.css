@@ -134,8 +134,8 @@ h2 {
 
 .badge-offline {
   position: absolute;
-  bottom: 25px;
-  left: -35px;
+  bottom: 20px;
+  left: -20px;
   background-color: red;
   transform: rotate(-30deg);
   z-index: 1;
