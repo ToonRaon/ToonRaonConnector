@@ -140,6 +140,7 @@ h2 {
   transform: rotate(-30deg);
   z-index: 1;
   pointer-events: none;
+  font-size: 5px;
 }
 
 
