@@ -132,6 +132,16 @@ h2 {
   pointer-events: none;
 }
 
+.badge-offline {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  background-color: red;
+  transform: rotate(-30deg);
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 
 .img-responsive-center {
