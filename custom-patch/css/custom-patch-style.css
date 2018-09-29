@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Nanum Gothic.eot'); /* IE9 Compat Modes */
+  src: local('NanumGothic'),
+       url('./fonts/Nanum Gothic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/Nanum Gothic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/Nanum Gothic.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/Nanum Gothic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/Nanum Gothic.svg#NanumGothic') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Do Hyeon';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/do-hyeon-v4-korean-regular.eot'); /* IE9 Compat Modes */
+  src: local('Do Hyeon Regular'), local('DoHyeon-Regular'),
+       url('./fonts/do-hyeon-v4-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/do-hyeon-v4-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/do-hyeon-v4-korean-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/do-hyeon-v4-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/do-hyeon-v4-korean-regular.svg#DoHyeon') format('svg'); /* Legacy iOS */
+}
+
+body {
+	padding-top: 50px !important;
+}
+
+
+
+.content .jumbotron:nth-child(odd) {
+	background-color: #F3F3F3;
+}
+
+.content .jumbotron:nth-child(even) {
+	background-color: #E3E3E3;
+}
+
+.content .jumbotron {
+	margin-bottom: 0 !important;
+	padding: 100px 0;
+}
+
+.content {
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.faq-title {
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 5px #ACACAC;
+}
+
+.faq-content {
+	font-size: 30px !important;
+	color: #404040;
+}
+
+
+.content img {
+  max-width: 60vw;
+}
