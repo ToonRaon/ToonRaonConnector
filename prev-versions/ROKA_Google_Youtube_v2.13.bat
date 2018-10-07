@@ -108,7 +108,7 @@ if exist C:\Windows\System32\drivers\etc\hosts.bak (
 :PATCH
 cls
 echo DNS를 변경합니다.
-netsh interface ip set dns "로컬 영역 연결" static 8.8.8.8 primary
+netsh interface ip set dns "로컬 영역 연결" static 1.1.1.1 primary
 
 echo.
 echo 변경된 DNS를 플러싱 합니다.
