@@ -2,13 +2,13 @@
 
 set ver=v2.13
 
-rem ÇöÀç °æ·Î ÀúÀå
+rem í˜„ìž¬ ê²½ë¡œ ì €ìž¥
 set PATH=%cd%
 
-rem °æ·Î SYSTEM32·Î º¯°æ(¾È ±×·¯¸é ping ¸í·É¾î°¡ ¾È ¸ÔÈû)
+rem ê²½ë¡œ SYSTEM32ë¡œ ë³€ê²½(ì•ˆ ê·¸ëŸ¬ë©´ ping ëª…ë ¹ì–´ê°€ ì•ˆ ë¨¹íž˜)
 cd C:\Windows\System32
 
-title ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+title ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 
 color 0f
 
@@ -21,32 +21,32 @@ mode con cols=80 lines=35
 :MAIN
 cls
 echo.
-echo                  ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+echo                  ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 echo.
-echo                                             Á¢¼Ó±â ´Ù¿î·Îµå: http://toonraon.cf
-echo                                                ¹®ÀÇ ¹× °ÇÀÇ: toonraon@naver.com
-echo                                     ÄÚµå: github.com/ToonRaon/ToonRaonConnector
+echo                                             ì ‘ì†ê¸° ë‹¤ìš´ë¡œë“œ: http://toonraon.cf
+echo                                                ë¬¸ì˜ ë° ê±´ì˜: toonraon@naver.com
+echo                                     ì½”ë“œ: github.com/ToonRaon/ToonRaonConnector
 echo.
-echo  ¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¯
-echo  ¦­                                Ã³À½ È­¸é                                 ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢          1. ÆÐÄ¡ÇÏ±â           ¦¢  ¦¢        2. ÆÐÄ¡ µÇµ¹¸®±â        ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢       3. ºê¶ó¿ìÀú ¼³Ä¡         ¦¢  ¦¢       4. Á¢¼Ó±â È¨ÆäÀÌÁö       ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤                                      ¦­
-echo  ¦­¦¢         5. ÆÐÄ¡ ³»¿ª           ¦¢                                      ¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥                                      ¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢                                0. °í±Þ                               ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                      ÇÁ·Î±×·¥ Á¾·á (Q/q) ¦­
-echo  ¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦°
+echo  â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“
+echo  â”ƒ                                ì²˜ìŒ í™”ë©´                                 â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚          1. íŒ¨ì¹˜í•˜ê¸°           â”‚  â”‚        2. íŒ¨ì¹˜ ë˜ëŒë¦¬ê¸°        â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚       3. ë¸Œë¼ìš°ì € ì„¤ì¹˜         â”‚  â”‚       4. ì ‘ì†ê¸° í™ˆíŽ˜ì´ì§€       â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                                      â”ƒ
+echo  â”ƒâ”‚         5. íŒ¨ì¹˜ ë‚´ì—­           â”‚                                      â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                      â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚                                0. ê³ ê¸‰                               â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                      í”„ë¡œê·¸ëž¨ ì¢…ë£Œ (Q/q) â”ƒ
+echo  â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 echo.
 
 if %select% == 1 goto :PATCH
@@ -58,22 +58,22 @@ if %select% == 0 goto :ADVANCED
 if %select% == Q exit
 if %select% == q exit
 
-rem Àß¸ø ÀÔ·ÂÇÏ¿´À» °æ¿ì Ã³À½ È­¸éÀ¸·Î µ¹¾Æ°¡±â
+rem ìž˜ëª» ìž…ë ¥í•˜ì˜€ì„ ê²½ìš° ì²˜ìŒ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ê¸°
 goto :MAIN
 
 
 :CHANGELOG
 cls
 
-rem ÆÐÄ¡¶§¸¶´Ù ¹Ýµå½Ã ¼öÁ¤ÇÒ °Í
+rem íŒ¨ì¹˜ë•Œë§ˆë‹¤ ë°˜ë“œì‹œ ìˆ˜ì •í•  ê²ƒ
 
-echo ========== %ver% ÆÐÄ¡ ³»¿ª ==========
+echo ========== %ver% íŒ¨ì¹˜ ë‚´ì—­ ==========
 echo.
 
-echo 1. maps.googleapis.com ÆÐÄ¡ Ãß°¡
-echo 2. clients6.google.com ÆÐÄ¡ Ãß°¡
-echo 2. client6.google.com ÆÐÄ¡ Ãß°¡
-echo 2. clients6.googleusercontent.com ÆÐÄ¡ Ãß°¡
+echo 1. maps.googleapis.com íŒ¨ì¹˜ ì¶”ê°€
+echo 2. clients6.google.com íŒ¨ì¹˜ ì¶”ê°€
+echo 2. client6.google.com íŒ¨ì¹˜ ì¶”ê°€
+echo 2. clients6.googleusercontent.com íŒ¨ì¹˜ ì¶”ê°€
 
 
 pause>nul
@@ -85,21 +85,21 @@ goto :MAIN
 :UNPATCH
 cls
 if exist C:\Windows\System32\drivers\etc\hosts.bak (
- rem ¹é¾÷ ÆÄÀÏÀÌ Á¸ÀçÇÒ ¶§
+ rem ë°±ì—… íŒŒì¼ì´ ì¡´ìž¬í•  ë•Œ
  
  @echo ON
  del C:\Windows\System32\drivers\etc\hosts
  ren C:\Windows\System32\drivers\etc\hosts.bak hosts
 
  @echo OFF
- echo ¼º°øÀûÀ¸·Î º¹¿øÇÏ¿´½À´Ï´Ù.
+ echo ì„±ê³µì ìœ¼ë¡œ ë³µì›í•˜ì˜€ìŠµë‹ˆë‹¤.
  ping 127.0.0.1 -n 2 >nul
 
  goto :MAIN
 ) else (
- rem ¹é¾÷ ÆÄÀÏ Á¸ÀçÇÏÁö ¾ÊÀ» ¶§
+ rem ë°±ì—… íŒŒì¼ ì¡´ìž¬í•˜ì§€ ì•Šì„ ë•Œ
  
- echo ¹é¾÷ ÆÄÀÏÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.
+ echo ë°±ì—… íŒŒì¼ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
  ping 127.0.0.1 -n 2 >nul
 
  goto :MAIN
@@ -107,11 +107,11 @@ if exist C:\Windows\System32\drivers\etc\hosts.bak (
 
 :PATCH
 cls
-echo DNS¸¦ º¯°æÇÕ´Ï´Ù.
-netsh interface ip set dns "·ÎÄÃ ¿µ¿ª ¿¬°á" static 8.8.8.8 primary
+echo DNSë¥¼ ë³€ê²½í•©ë‹ˆë‹¤.
+netsh interface ip set dns "ë¡œì»¬ ì˜ì—­ ì—°ê²°" static 8.8.8.8 primary
 
 echo.
-echo º¯°æµÈ DNS¸¦ ÇÃ·¯½Ì ÇÕ´Ï´Ù.
+echo ë³€ê²½ëœ DNSë¥¼ í”ŒëŸ¬ì‹± í•©ë‹ˆë‹¤.
 ipconfig /flushdns
 
 echo.
@@ -121,22 +121,22 @@ echo.
 
 
 echo.
-echo hosts ÆÄÀÏÀ» ¹é¾÷ÇÕ´Ï´Ù.
+echo hosts íŒŒì¼ì„ ë°±ì—…í•©ë‹ˆë‹¤.
 cd C:\Windows\System32\drivers\etc
 attrib -r -h -s hosts
 
 copy hosts C:\Windows\System32\drivers\etc\hosts.bak
-echo hosts ÆÄÀÏ ¹é¾÷ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+echo hosts íŒŒì¼ ë°±ì—…ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
 
 echo.
-echo hosts ÆÄÀÏ¿¡ ±¸±Û, À¯Æ©ºê ip¸¦ Ãß°¡ÇÕ´Ï´Ù.
+echo hosts íŒŒì¼ì— êµ¬ê¸€, ìœ íŠœë¸Œ ipë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.
 
-rem °ø¹é 2ÁÙ Ãß°¡
+rem ê³µë°± 2ì¤„ ì¶”ê°€
 echo.>>hosts
 echo.>>hosts
 
 @echo ON
-rem ±¸±Û °è¿­
+rem êµ¬ê¸€ ê³„ì—´
 echo 216.58.192.77 www.google.co.kr>>hosts
 echo 216.58.192.77 google.co.kr>>hosts
 echo 216.58.192.77 accounts.google.co.kr>>hosts
@@ -236,12 +236,12 @@ echo 216.58.192.77 books.google.co.kr>>hosts
 echo 216.58.192.77 maps.googleapis.com>>hosts
 
 
-rem ±¤°í Â÷´Ü
+rem ê´‘ê³  ì°¨ë‹¨
 echo 127.0.0.1 cm.g.doubleclick.net>>hosts
 echo 127.0.0.1 googleads.g.doubleclick.net>>hosts
 echo 127.0.0.1 pagead2.googlesyndication.com>>hosts
 
-rem À¯Æ©ºê °è¿­
+rem ìœ íŠœë¸Œ ê³„ì—´
 echo 216.58.192.174 www.youtube.com>>hosts
 echo 216.58.192.174 www.youtube.co.kr>>hosts
 echo 216.58.192.174 youtube.com>>hosts
@@ -264,7 +264,7 @@ echo 216.58.192.174 lh3.googleusercontent.com>>hosts
 cd C:\Windows\System32
 
 echo.
-echo ÆÐÄ¡°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+echo íŒ¨ì¹˜ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
 
 ping 127.0.0.1 -n 2 >nul
 
@@ -272,31 +272,31 @@ ping 127.0.0.1 -n 2 >nul
 :BROWSER
 cls
 echo.
-echo                  ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+echo                  ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 echo.
-echo                                                ¹®ÀÇ ¹× °ÇÀÇ: toonraon@naver.com
-echo                                     ÄÚµå: github.com/ToonRaon/ToonRaonConnector
+echo                                                ë¬¸ì˜ ë° ê±´ì˜: toonraon@naver.com
+echo                                     ì½”ë“œ: github.com/ToonRaon/ToonRaonConnector
 echo.
-echo  ¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¯
-echo  ¦­                              ºê¶ó¿ìÀú ¼³Ä¡                               ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢         1. ³×ÀÌ¹ö ¿þÀÏ         ¦¢  ¦¢           2. ¿ÀÆä¶ó            ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢         3. ÆÄÀÌ¾î Æø½º         ¦¢  ¦¢         4. ±¸±Û Å©·Ò           ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢                           0. Ã³À½ È­¸éÀ¸·Î                           ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                      ÇÁ·Î±×·¥ Á¾·á (Q/q) ¦­
-echo  ¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦°
+echo  â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“
+echo  â”ƒ                              ë¸Œë¼ìš°ì € ì„¤ì¹˜                               â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚         1. ë„¤ì´ë²„ ì›¨ì¼         â”‚  â”‚           2. ì˜¤íŽ˜ë¼            â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚         3. íŒŒì´ì–´ í­ìŠ¤         â”‚  â”‚         4. êµ¬ê¸€ í¬ë¡¬           â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚                           0. ì²˜ìŒ í™”ë©´ìœ¼ë¡œ                           â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                      í”„ë¡œê·¸ëž¨ ì¢…ë£Œ (Q/q) â”ƒ
+echo  â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 echo.
 
-echo ºê¶ó¿ìÀú¸¦ ´Ù¿î·Îµå ¹Þ´Â Áß ÀÔ´Ï´Ù...
+echo ë¸Œë¼ìš°ì €ë¥¼ ë‹¤ìš´ë¡œë“œ ë°›ëŠ” ì¤‘ ìž…ë‹ˆë‹¤...
 echo.
 
 if %select% == 1 start https://whale.naver.com/>nul
@@ -307,7 +307,7 @@ if %select% == 0 goto :MAIN
 if %select% == Q exit
 if %select% == q exit
 
-rem Àß¸ø ÀÔ·ÂÇÏ¿´À» °æ¿ì BROWSERÀ¸·Î µ¹¾Æ°¡±â
+rem ìž˜ëª» ìž…ë ¥í•˜ì˜€ì„ ê²½ìš° BROWSERìœ¼ë¡œ ëŒì•„ê°€ê¸°
 goto :BROWSER
 
 
@@ -315,28 +315,28 @@ goto :BROWSER
 :LOGOFF
 cls
 echo.
-echo                  ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+echo                  ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 echo.
-echo                                                ¹®ÀÇ ¹× °ÇÀÇ: toonraon@naver.com
-echo                                     ÄÚµå: github.com/ToonRaon/ToonRaonConnector
+echo                                                ë¬¸ì˜ ë° ê±´ì˜: toonraon@naver.com
+echo                                     ì½”ë“œ: github.com/ToonRaon/ToonRaonConnector
 echo.
-echo  ¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¯
-echo  ¦­                                ·Î±×¿ÀÇÁ                                  ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­                 ·Î±×¿ÀÇÁ¸¦ ÇÒ °æ¿ì ½ÎÁö¹æ ÀÌ¿ë 2½Ã°£ ÀÌÈÄ                ¦­
-echo  ¦­                  ÀÚµ¿À¸·Î ²¨Áö´Â Çö»óÀ» ¾ø¾Ù ¼ö ÀÖ½À´Ï´Ù.                ¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢          1. ·Î±×¿ÀÇÁ           ¦¢  ¦¢       2. ·Î±×¿ÀÇÁ ¾È ÇÔ        ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢                           0. Ã³À½ È­¸éÀ¸·Î                           ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                      ÇÁ·Î±×·¥ Á¾·á (Q/q) ¦­
-echo  ¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦°
+echo  â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“
+echo  â”ƒ                                ë¡œê·¸ì˜¤í”„                                  â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒ                 ë¡œê·¸ì˜¤í”„ë¥¼ í•  ê²½ìš° ì‹¸ì§€ë°© ì´ìš© 2ì‹œê°„ ì´í›„                â”ƒ
+echo  â”ƒ                  ìžë™ìœ¼ë¡œ êº¼ì§€ëŠ” í˜„ìƒì„ ì—†ì•¨ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.                â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚          1. ë¡œê·¸ì˜¤í”„           â”‚  â”‚       2. ë¡œê·¸ì˜¤í”„ ì•ˆ í•¨        â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚                           0. ì²˜ìŒ í™”ë©´ìœ¼ë¡œ                           â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                      í”„ë¡œê·¸ëž¨ ì¢…ë£Œ (Q/q) â”ƒ
+echo  â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 echo.
 
 if %select% == 1 shutdown -l
@@ -345,7 +345,7 @@ if %select% == 0 goto :MAIN
 if %select% == Q exit
 if %select% == q exit
 
-rem Àß¸ø ÀÔ·ÂÇÏ¿´À» °æ¿ì LOGOFF·Î µ¹¾Æ°¡±â
+rem ìž˜ëª» ìž…ë ¥í•˜ì˜€ì„ ê²½ìš° LOGOFFë¡œ ëŒì•„ê°€ê¸°
 goto :LOGOFF
 
 
@@ -353,42 +353,42 @@ goto :LOGOFF
 :ADVANCED
 cls
 echo.
-echo                  ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+echo                  ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 echo.
-echo                                                ¹®ÀÇ ¹× °ÇÀÇ: toonraon@naver.com
-echo                                     ÄÚµå: github.com/ToonRaon/ToonRaonConnector
+echo                                                ë¬¸ì˜ ë° ê±´ì˜: toonraon@naver.com
+echo                                     ì½”ë“œ: github.com/ToonRaon/ToonRaonConnector
 echo.
-echo  ¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¯
-echo  ¦­                                  °í±Þ                                    ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­         ÁÖÀÇ! °ü·Ã Áö½ÄÀÌ ¾ø´Â ºÐµé¿¡°Õ »ç¿ëÀ» ±ÇÇÏÁö ¾Ê½À´Ï´Ù.          ¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢  1. ±¸±Û »çÀÌÆ® ÆÐÄ¡ Ãß°¡ÇÏ±â  ¦¢  ¦¢ 2. À¯Æ©ºê »çÀÌÆ® ÆÐÄ¡ Ãß°¡ÇÏ±â ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢  3. »õ·Î¿î IP¿Í URL µî·ÏÇÏ±â   ¦¢  ¦¢ 4. hosts ÆÄÀÏ ¸Þ¸ðÀåÀ¸·Î ¿­±â  ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢   5. ÀÌ ÆÄÀÏÀ» ÅØ½ºÆ®·Î ¿­±â   ¦¢  ¦¢      6. ÄÄÇ»ÅÍ ·Î±×¿ÀÇÁ        ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢     7. ±ÛÀÚ»ö/¹è°æ»ö º¯°æ      ¦¢  ¦¢          8. tracert            ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤  ¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢            9. ping             ¦¢  ¦¢         a. Æú´õ »ý¼º           ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥  ¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤                                      ¦­
-echo  ¦­¦¢   b. ÆÄÀÏ ÀÌ¸§, È®ÀåÀÚ º¯°æ    ¦¢                                      ¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥                                      ¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢                           0. Ã³À½ È­¸éÀ¸·Î                           ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                      ÇÁ·Î±×·¥ Á¾·á (Q/q) ¦­
-echo  ¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦°
+echo  â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“
+echo  â”ƒ                                  ê³ ê¸‰                                    â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒ         ì£¼ì˜! ê´€ë ¨ ì§€ì‹ì´ ì—†ëŠ” ë¶„ë“¤ì—ê² ì‚¬ìš©ì„ ê¶Œí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.          â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚  1. êµ¬ê¸€ ì‚¬ì´íŠ¸ íŒ¨ì¹˜ ì¶”ê°€í•˜ê¸°  â”‚  â”‚ 2. ìœ íŠœë¸Œ ì‚¬ì´íŠ¸ íŒ¨ì¹˜ ì¶”ê°€í•˜ê¸° â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚  3. ìƒˆë¡œìš´ IPì™€ URL ë“±ë¡í•˜ê¸°   â”‚  â”‚ 4. hosts íŒŒì¼ ë©”ëª¨ìž¥ìœ¼ë¡œ ì—´ê¸°  â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚   5. ì´ íŒŒì¼ì„ í…ìŠ¤íŠ¸ë¡œ ì—´ê¸°   â”‚  â”‚      6. ì»´í“¨í„° ë¡œê·¸ì˜¤í”„        â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚     7. ê¸€ìžìƒ‰/ë°°ê²½ìƒ‰ ë³€ê²½      â”‚  â”‚          8. tracert            â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚            9. ping             â”‚  â”‚         a. í´ë” ìƒì„±           â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                                      â”ƒ
+echo  â”ƒâ”‚   b. íŒŒì¼ ì´ë¦„, í™•ìž¥ìž ë³€ê²½    â”‚                                      â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                      â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚                           0. ì²˜ìŒ í™”ë©´ìœ¼ë¡œ                           â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                      í”„ë¡œê·¸ëž¨ ì¢…ë£Œ (Q/q) â”ƒ
+echo  â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 echo.
 
 if %select% == 1 goto :ADD_GOOGLE
@@ -408,22 +408,22 @@ if %select% == 0 goto :MAIN
 if %select% == Q exit
 if %select% == q exit
 
-rem Àß¸ø ÀÔ·ÂÇÏ¿´À» °æ¿ì ADVANCED·Î µ¹¾Æ°¡±â
+rem ìž˜ëª» ìž…ë ¥í•˜ì˜€ì„ ê²½ìš° ADVANCEDë¡œ ëŒì•„ê°€ê¸°
 goto :ADVANCED
 
 
 
 :ADD_GOOGLE
 cls
-echo ÀÌ ±â´ÉÀº Á¦ÀÛÀÚ°¡ ¹ÌÃ³ Ãß°¡ÇÏ±â ¸øÇÑ ±¸±Û °ü·Ã »çÀÌÆ®^(¿¹¸¦ µé¾î google.co.jp^)¸¦ ¶ÕÀ» ¶§ Á÷Á¢ ÇØ´ç »çÀÌÆ®¸¦ ÆÐÄ¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+echo ì´ ê¸°ëŠ¥ì€ ì œìž‘ìžê°€ ë¯¸ì²˜ ì¶”ê°€í•˜ê¸° ëª»í•œ êµ¬ê¸€ ê´€ë ¨ ì‚¬ì´íŠ¸^(ì˜ˆë¥¼ ë“¤ì–´ google.co.jp^)ë¥¼ ëš«ì„ ë•Œ ì§ì ‘ í•´ë‹¹ ì‚¬ì´íŠ¸ë¥¼ íŒ¨ì¹˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 echo.
-echo ±¸±Û °è¿­ »çÀÌÆ®ÀÇ ÆÐÄ¡¸¦ Ãß°¡ÇÕ´Ï´Ù.
-echo ¿øÇÏ½Ã´Â »çÀÌÆ®ÀÇ µµ¸ÞÀÎ ÁÖ¼Ò¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.
-echo ¿¹^) www.google.co.jp
+echo êµ¬ê¸€ ê³„ì—´ ì‚¬ì´íŠ¸ì˜ íŒ¨ì¹˜ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.
+echo ì›í•˜ì‹œëŠ” ì‚¬ì´íŠ¸ì˜ ë„ë©”ì¸ ì£¼ì†Œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.
+echo ì˜ˆ^) www.google.co.jp
 echo.
-echo µ¹¾Æ°¡±â(B/b)
+echo ëŒì•„ê°€ê¸°(B/b)
 echo.
-set /p domain=µµ¸ÞÀÎ ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. 
+set /p domain=ë„ë©”ì¸ ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”. 
 
 if %domain% == B goto :ADVANCED
 if %domain% == b goto :ADVANCED
@@ -438,15 +438,15 @@ goto :ADVANCED
 
 :ADD_YOUTUBE
 cls
-echo ÀÌ ±â´ÉÀº Á¦ÀÛÀÚ°¡ ¹ÌÃ³ Ãß°¡ÇÏ±â ¸øÇÑ À¯Æ©ºê °ü·Ã »çÀÌÆ®^(¿¹¸¦ µé¾î music.youtube.com^)¸¦ ¶ÕÀ» ¶§ Á÷Á¢ ÇØ´ç »çÀÌÆ®¸¦ ÆÐÄ¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+echo ì´ ê¸°ëŠ¥ì€ ì œìž‘ìžê°€ ë¯¸ì²˜ ì¶”ê°€í•˜ê¸° ëª»í•œ ìœ íŠœë¸Œ ê´€ë ¨ ì‚¬ì´íŠ¸^(ì˜ˆë¥¼ ë“¤ì–´ music.youtube.com^)ë¥¼ ëš«ì„ ë•Œ ì§ì ‘ í•´ë‹¹ ì‚¬ì´íŠ¸ë¥¼ íŒ¨ì¹˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 echo.
-echo À¯Æ©ºê °è¿­ »çÀÌÆ®ÀÇ ÆÐÄ¡¸¦ Ãß°¡ÇÕ´Ï´Ù.
-echo ¿øÇÏ½Ã´Â »çÀÌÆ®ÀÇ µµ¸ÞÀÎ ÁÖ¼Ò¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.
-echo ¿¹^) music.youtube.com
+echo ìœ íŠœë¸Œ ê³„ì—´ ì‚¬ì´íŠ¸ì˜ íŒ¨ì¹˜ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.
+echo ì›í•˜ì‹œëŠ” ì‚¬ì´íŠ¸ì˜ ë„ë©”ì¸ ì£¼ì†Œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.
+echo ì˜ˆ^) music.youtube.com
 echo.
-echo µ¹¾Æ°¡±â(B/b)
+echo ëŒì•„ê°€ê¸°(B/b)
 echo.
-set /p domain=µµ¸ÞÀÎ ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. 
+set /p domain=ë„ë©”ì¸ ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”. 
 
 if %domain% == B goto :ADVANCED
 if %domain% == b goto :ADVANCED
@@ -461,18 +461,18 @@ goto :ADVANCED
 
 :ADD_NEW_URL
 cls
-echo ÀÌ ±â´ÉÀº Á¦ÀÛÀÚ°¡ ¹ÌÃ³ Ãß°¡ÇÏ±â ¸øÇÑ »çÀÌÆ®¸¦ ¶ÕÀ» ¶§ Á÷Á¢ ÇØ´ç »çÀÌÆ®¸¦ ÆÐÄ¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+echo ì´ ê¸°ëŠ¥ì€ ì œìž‘ìžê°€ ë¯¸ì²˜ ì¶”ê°€í•˜ê¸° ëª»í•œ ì‚¬ì´íŠ¸ë¥¼ ëš«ì„ ë•Œ ì§ì ‘ í•´ë‹¹ ì‚¬ì´íŠ¸ë¥¼ íŒ¨ì¹˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 echo.
-echo ¸ðµç »çÀÌÆ®°¡ °¡´ÉÇÑ °ÍÀº ¾Æ´Ï¸ç, ±¸±ÛÀÌ³ª À¯Æ©ºêÃ³·³ ÇÏ³ªÀÇ µµ¸ÞÀÎ¿¡ ¿©·¯°¡Áö Á¢¼Ó IP¸¦ Á¦°øÇÏ´Â ´ëÇü ±Û·Î¹ú »çÀÌÆ®ÀÇ °æ¿ì¿¡¸¸ °¡´ÉÇÕ´Ï´Ù.
-echo 172.xxx.xxx.xxx·Î ½ÃÀÛÇÏ´Â IP´Â ½ÎÁö¹æ¿¡¼­ Á¢¼Ó ºÒ°¡´ÉÇÕ´Ï´Ù.
+echo ëª¨ë“  ì‚¬ì´íŠ¸ê°€ ê°€ëŠ¥í•œ ê²ƒì€ ì•„ë‹ˆë©°, êµ¬ê¸€ì´ë‚˜ ìœ íŠœë¸Œì²˜ëŸ¼ í•˜ë‚˜ì˜ ë„ë©”ì¸ì— ì—¬ëŸ¬ê°€ì§€ ì ‘ì† IPë¥¼ ì œê³µí•˜ëŠ” ëŒ€í˜• ê¸€ë¡œë²Œ ì‚¬ì´íŠ¸ì˜ ê²½ìš°ì—ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.
+echo 172.xxx.xxx.xxxë¡œ ì‹œìž‘í•˜ëŠ” IPëŠ” ì‹¸ì§€ë°©ì—ì„œ ì ‘ì† ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
 echo.
-echo »õ·Î¿î »çÀÌÆ®ÀÇ IP ÆÐÄ¡¸¦ Ãß°¡ÇÕ´Ï´Ù.
-echo ¿øÇÏ½Ã´Â »çÀÌÆ®ÀÇ ¿ìÈ¸ IPÁÖ¼Ò¿Í µµ¸ÞÀÎ ÁÖ¼Ò¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.
-echo ¿¹^) 216.58.192.77 www.google.co.jp
+echo ìƒˆë¡œìš´ ì‚¬ì´íŠ¸ì˜ IP íŒ¨ì¹˜ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.
+echo ì›í•˜ì‹œëŠ” ì‚¬ì´íŠ¸ì˜ ìš°íšŒ IPì£¼ì†Œì™€ ë„ë©”ì¸ ì£¼ì†Œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.
+echo ì˜ˆ^) 216.58.192.77 www.google.co.jp
 echo.
-echo µ¹¾Æ°¡±â(B/b)
+echo ëŒì•„ê°€ê¸°(B/b)
 echo.
-set /p domain=IP¿Í µµ¸ÞÀÎÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä. : 
+set /p domain=IPì™€ ë„ë©”ì¸ì„ ìž…ë ¥í•´ì£¼ì„¸ìš”. : 
 
 if %domain% == B goto :ADVANCED
 if %domain% == b goto :ADVANCED
@@ -497,37 +497,37 @@ goto :ADVANCED
 :COLOR
 cls
 echo.
-echo                  ToonRaon ½ÎÁö¹æ ±¸±Û, À¯Æ©ºê Á¢¼Ó±â %ver%
+echo                  ToonRaon ì‹¸ì§€ë°© êµ¬ê¸€, ìœ íŠœë¸Œ ì ‘ì†ê¸° %ver%
 echo.
-echo                                             Á¢¼Ó±â ´Ù¿î·Îµå: http://toonraon.cf
-echo                                                ¹®ÀÇ ¹× °ÇÀÇ: toonraon@naver.com
-echo                                     ÄÚµå: github.com/ToonRaon/ToonRaonConnector
+echo                                             ì ‘ì†ê¸° ë‹¤ìš´ë¡œë“œ: http://toonraon.cf
+echo                                                ë¬¸ì˜ ë° ê±´ì˜: toonraon@naver.com
+echo                                     ì½”ë“œ: github.com/ToonRaon/ToonRaonConnector
 echo.
-echo  ¦®¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¯
-echo  ¦­                                »ö»ó º¯°æ                                 ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­            ¾Æ·¡ÀÇ »ö»óÇ¥¸¦ Âü°íÇÏ¿© ¿øÇÏ´Â »öÀ¸·Î º¯°æÇÏ¼¼¿ä.            ¦­
-echo  ¦­                 ÃÊ·Ï ¹è°æ ^& °ËÀº ±Û¾¾·Î ¼³Á¤ÇÏ°í ½Í´Ù¸é                  ¦­
-echo  ¦­                   20¶ó°í ÀÔ·ÂÇÏ¸é µË´Ï´Ù. (¶ç¾î¾²±â X)                   ¦­
-echo  ¦­¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­                     0 = °ËÁ¤»ö          8 = ÁøÈ¸»ö                       ¦­
-echo  ¦­                     1 = ÆÄ¶õ»ö          9 = ¿¬ÆÄ¶û                       ¦­
-echo  ¦­                     2 = ÃÊ·Ï»ö          a = ¿¬ÃÊ·Ï                       ¦­
-echo  ¦­                     3 = ÇÏ´Ã»ö          b = ¿¬ÇÏ´Ã                       ¦­
-echo  ¦­                     4 = »¡°£»ö          c = ¿¬»¡°­                       ¦­
-echo  ¦­                     5 = º¸¶ó»ö          d = ¿¬º¸¶ó                       ¦­
-echo  ¦­                     6 = ³ë¶õ»ö          e = ¿¬³ë¶û                       ¦­
-echo  ¦­                     7 = ¿¬È¸»ö          f = ÇÏ¾á»ö                       ¦­
-echo  ¦­                                                                          ¦­
-echo  ¦­¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤¦­
-echo  ¦­¦¢                              0. Ã³À½À¸·Î                             ¦¢¦­
-echo  ¦­¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥¦­
-echo  ¦­                                                      ÇÁ·Î±×·¥ Á¾·á (Q/q) ¦­
-echo  ¦±¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦¬¦°
+echo  â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“
+echo  â”ƒ                                ìƒ‰ìƒ ë³€ê²½                                 â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒ            ì•„ëž˜ì˜ ìƒ‰ìƒí‘œë¥¼ ì°¸ê³ í•˜ì—¬ ì›í•˜ëŠ” ìƒ‰ìœ¼ë¡œ ë³€ê²½í•˜ì„¸ìš”.            â”ƒ
+echo  â”ƒ                 ì´ˆë¡ ë°°ê²½ ^& ê²€ì€ ê¸€ì”¨ë¡œ ì„¤ì •í•˜ê³  ì‹¶ë‹¤ë©´                  â”ƒ
+echo  â”ƒ                   20ë¼ê³  ìž…ë ¥í•˜ë©´ ë©ë‹ˆë‹¤. (ë„ì–´ì“°ê¸° X)                   â”ƒ
+echo  â”ƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒ                     0 = ê²€ì •ìƒ‰          8 = ì§„íšŒìƒ‰                       â”ƒ
+echo  â”ƒ                     1 = íŒŒëž€ìƒ‰          9 = ì—°íŒŒëž‘                       â”ƒ
+echo  â”ƒ                     2 = ì´ˆë¡ìƒ‰          a = ì—°ì´ˆë¡                       â”ƒ
+echo  â”ƒ                     3 = í•˜ëŠ˜ìƒ‰          b = ì—°í•˜ëŠ˜                       â”ƒ
+echo  â”ƒ                     4 = ë¹¨ê°„ìƒ‰          c = ì—°ë¹¨ê°•                       â”ƒ
+echo  â”ƒ                     5 = ë³´ë¼ìƒ‰          d = ì—°ë³´ë¼                       â”ƒ
+echo  â”ƒ                     6 = ë…¸ëž€ìƒ‰          e = ì—°ë…¸ëž‘                       â”ƒ
+echo  â”ƒ                     7 = ì—°íšŒìƒ‰          f = í•˜ì–€ìƒ‰                       â”ƒ
+echo  â”ƒ                                                                          â”ƒ
+echo  â”ƒâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”ƒ
+echo  â”ƒâ”‚                              0. ì²˜ìŒìœ¼ë¡œ                             â”‚â”ƒ
+echo  â”ƒâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”ƒ
+echo  â”ƒ                                                      í”„ë¡œê·¸ëž¨ ì¢…ë£Œ (Q/q) â”ƒ
+echo  â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›
 echo.
 
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 echo.
 
 if %select% == 0 goto :MAIN
@@ -544,9 +544,9 @@ goto :COLOR
 
 :TRACERT
 cls
-echo tracert ÇÒ µµ¸ÞÀÎ È¤Àº ip¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ^(µÚ·Î °¡·Á¸é b ÀÔ·Â^)
+echo tracert í•  ë„ë©”ì¸ í˜¹ì€ ipë¥¼ ìž…ë ¥í•˜ì„¸ìš”. ^(ë’¤ë¡œ ê°€ë ¤ë©´ b ìž…ë ¥^)
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 
 if %select%==b goto :ADVANCED
 if %select%==B goto :ADVANCED
@@ -562,9 +562,9 @@ goto :ADVANCED
 
 :PING
 cls
-echo pingÀ» º¸³¾ µµ¸ÞÀÎ È¤Àº ip¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ^(µÚ·Î °¡·Á¸é b ÀÔ·Â^)
+echo pingì„ ë³´ë‚¼ ë„ë©”ì¸ í˜¹ì€ ipë¥¼ ìž…ë ¥í•˜ì„¸ìš”. ^(ë’¤ë¡œ ê°€ë ¤ë©´ b ìž…ë ¥^)
 echo.
-set /p select=ÀÔ·Â: 
+set /p select=ìž…ë ¥: 
 
 if %select%==b goto :ADVANCED
 if %select%==B goto :ADVANCED
@@ -580,14 +580,14 @@ goto :ADVANCED
 
 :GEN_DIR
 cls
-echo Æú´õ¸¦ »ý¼ºÇÒ °æ·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.
-set /p path=°æ·Î: 
+echo í´ë”ë¥¼ ìƒì„±í•  ê²½ë¡œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.
+set /p path=ê²½ë¡œ: 
 
 cd %path%
 
 echo.
-echo »ý¼ºÇÒ Æú´õ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä.
-set /p name=Æú´õ ÀÌ¸§: 
+echo ìƒì„±í•  í´ë” ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.
+set /p name=í´ë” ì´ë¦„: 
 
 md %name%
 
@@ -600,23 +600,23 @@ goto :ADVANCED
 
 :REN
 cls
-echo ÀÌ¸§À» ¹Ù²Ü ÆÄÀÏÀÌ Á¸ÀçÇÏ´Â Æú´õ °æ·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.
-set /p path=°æ·Î: 
+echo ì´ë¦„ì„ ë°”ê¿€ íŒŒì¼ì´ ì¡´ìž¬í•˜ëŠ” í´ë” ê²½ë¡œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.
+set /p path=ê²½ë¡œ: 
 
 cd %path%
 
 echo.
-echo ========== ÆÄÀÏ ¸ñ·Ï ==========
+echo ========== íŒŒì¼ ëª©ë¡ ==========
 echo.
 dir
 
 echo.
-echo ¹Ù²Ü ÆÄÀÏÀÇ ÀÌ¸§°ú È®ÀåÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.
-set /p name=¹Ù²Ü ÆÄÀÏ: 
+echo ë°”ê¿€ íŒŒì¼ì˜ ì´ë¦„ê³¼ í™•ìž¥ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”.
+set /p name=ë°”ê¿€ íŒŒì¼: 
 
 echo.
-echo »õ·Î¿î ÀÌ¸§°ú È®ÀåÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.
-set /p new_name=»õ·Î¿î ÀÌ¸§°ú È®ÀåÀÚ: 
+echo ìƒˆë¡œìš´ ì´ë¦„ê³¼ í™•ìž¥ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”.
+set /p new_name=ìƒˆë¡œìš´ ì´ë¦„ê³¼ í™•ìž¥ìž: 
 
 ren %name% %new_name%
 
