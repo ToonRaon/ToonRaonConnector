@@ -279,6 +279,9 @@ echo 127.0.0.1 browser-update.org>>hosts
 rem 카카오tv
 echo 216.58.192.42 imasdk.googleapis.com>>hosts
 
+rem 마이크로소프트
+echo 93.184.215.201 cs10.wpc.v0cdn.net>>hosts
+echo 93.184.215.201 download.visualstudio.microsoft.com>>hosts
 
 @echo OFF
 
